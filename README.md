@@ -245,6 +245,7 @@ First build and install the LWGRP library, available at [http://github.com/llnl/
 
 Then to build:
 
+    ./autogen.sh
     ./configure --prefix <installdir> --with-lwgrp=<lwgrp_installdir>
     make
     make install
