@@ -28,3 +28,6 @@ m4/
 # final products
 libdtcmp.pc
 libdtcmp.la
+
+# cmake build directory
+build/

@@ -243,8 +243,17 @@ Build
 =====
 First build and install the LWGRP library, available at [http://github.com/llnl/lwgrp](http://github.com/llnl/lwgrp).
 
-Then to build:
+Then to build (autotools):
 
-    ./configure --prefix <installdir> --with-lwgrp=<lwgrp_installdir>
-    make
-    make install
+```bash
+./configure --prefix <installdir> --with-lwgrp=<lwgrp_installdir>
+make
+make install
+```
+
+Build (CMake):
+
+```bash
+cmake -S . -B build -DCMAKE_INSTALL_PREFIX=<installdir>
+cmake --build build --target install
+```
